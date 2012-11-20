@@ -1,6 +1,6 @@
 module Push
   class ConfigurationGcm < Push::Configuration
-    store :properties, accessors: [:key]
+    store :properties, :accessors => [:key]
     attr_accessible :app, :enabled, :connections, :key
     validates :key, :presence => true
 
